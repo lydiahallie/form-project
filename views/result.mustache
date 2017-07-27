@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <ul>
+      {{#fullName}}
+        <li>Full name: {{.}}</li>
+      {{/fullName}}
+
+      {{#email}}
+        <li>Email: {{.}}</li>
+      {{/email}}
+
+      {{#birthyear}}
+        <li>Year of birth: {{.}}</li>
+      {{/birthyear}}
+
+      {{#position}}
+        <li>Position: {{.}}</li>
+      {{/position}}
+
+      {{#password}}
+        <li>Password: {{.}}</li>
+      {{/password}}
+    </ul>
+  </body>
+</html>
