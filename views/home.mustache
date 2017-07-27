@@ -4,6 +4,30 @@
   </head>
   <body>
     <form class="" action="/" method="post">
+
+
+          <ul>
+            {{#fullName}}
+              <li>{{msg}}</li>
+            {{/fullName}}
+
+            {{#email}}
+              <li>{{msg}}</li>
+            {{/email}}
+
+            {{#birthyear}}
+              <li>{{msg}}</li>
+            {{/birthyear}}
+
+            {{#position}}
+              <li>{{msg}}</li>
+            {{/position}}
+
+            {{#password}}
+              <li>{{msg}}</li>
+            {{/password}}
+          </ul>
+          
       <h4>Form</h4>
       <p>Name</p>
       <input type="text" name="fullName" value="">
