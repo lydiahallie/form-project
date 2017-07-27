@@ -11,7 +11,6 @@ app.set('view engine', 'mustache')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(expressValidator())
-
 app.use(express.static('public'))
 
 app.get("/", (req, res) => {
@@ -47,7 +46,7 @@ app.post("/", (req, res) => {
       errors: errors
     }
     res.render('home', data)
-  } else{
+  }else{
       res.render('result', {
         fullName: req.body.fullName,
         email: req.body.email,
