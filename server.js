@@ -14,7 +14,6 @@ app.use(expressValidator())
 app.use(express.static('public'))
 
 app.get("/", (req, res) => {
-  console.log("hello")
   res.render('home')
 })
 
